@@ -518,10 +518,15 @@ gap: 24px;
     display: flex;
     width: 264px;
     height: 40px;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
-    background-color: var(--hero-background-color);
+    background-color: transparent;
     padding: 8px 16px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: var(--white-background-color);
 }
 
 .footer-subscribe-icon{
@@ -537,12 +542,16 @@ text-align: left;
 color: #FFFFFF;
 }
 
+.footer-subscribe-form-label::placeholder{
+    color: var(--white-background-color);
+}
+
 .footer-subscribe-button{
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 500;
-    line-height: 1.5
+    line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
     min-width: 165px;
@@ -688,9 +697,7 @@ fill: var(--primary-brand-color);
    transition: fill var(--transition-dur-and-fun);
 }
 
-.contacts-form-field-wrapper{
-    margin-bottom: 16px;
-}
+
 
 
 .contacts-form-comment{
@@ -700,7 +707,7 @@ fill: var(--primary-brand-color);
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
-    background-color: transparant;
+    background-color: transparent;
     border: 1px solid #2E2F4266;
     border-radius: 4px;
     outline: transparent;
@@ -738,6 +745,9 @@ fill: var(--light-color);
 outline: 2px solid var(--press-state-color);
 } */
 
+.contacts-form-checkbox-wrapper{
+    margin-bottom: 24px;
+}
 .contacts-form-own-checkbox{
     display: inline-flex;
     justify-content: center;
@@ -750,13 +760,14 @@ outline: 2px solid var(--press-state-color);
     cursor: pointer;
     margin-right: 8px;
 
-    transition: background-color var(--transition-dur-and-fun);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-form-checkbox-label{
+    display: block;
 font-size: 12px;
 font-weight: 400;
-line-height: 1.16;
+line-height: 1.17;
 letter-spacing: 0.04em;
 text-align: left;
 color: #8E8F99;
@@ -769,7 +780,8 @@ color: #8E8F99;
 
 .contacts-form-submit{
     display: block;
-font-family: Roboto;
+
+    font-family: "Roboto", sans-serif;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
