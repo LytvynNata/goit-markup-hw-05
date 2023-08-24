@@ -529,6 +529,7 @@ color: var(--white-background-color);
     transform: translate(-50%, -50%);
     width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
    border-radius: 4px;
     background-color: var(--modal-background-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -563,6 +564,26 @@ color: var(--white-background-color);
 
 .close-btn-icon{
     transition: fill var(--transition-dur-and-fun);
+}
+
+.contacts-form-description{
+    margin-bottom: 16px;
+    text-align: center;
+    width: 360px;
+}
+
+.contacts-form-field-wrapper{
+    margin-bottom: 8px;
+}
+
+.contacts-forma-label{
+    display: block;
+font-size: 12px;
+font-weight: 400;
+line-height: 1.16;
+letter-spacing: 0.04em;
+text-align: left;
+color: #8E8F99;
 }
 /* ===============/Modal Window==================== */
 
