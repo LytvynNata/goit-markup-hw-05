@@ -696,8 +696,14 @@ fill: var(--primary-brand-color);
 .contacts-form-comment{
     width: 100%;
     height: 120px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    background-color: transparant;
     border: 1px solid #2E2F4266;
     border-radius: 4px;
+    outline: transparent;
     resize: none;
     padding: 8px 16px;
 
@@ -722,6 +728,8 @@ color: #2E2F4266;
 + .contacts-form-checkbox-label 
 > .contacts-form-own-checkbox{
 background-color: var(--press-state-color);
+border: none;
+fill: var(--light-color);
 }
 
 /* .contacts-form-checkbox:focus
@@ -737,9 +745,12 @@ outline: 2px solid var(--press-state-color);
     width: 16px;
     height: 16px;
     border: 1px solid #2E2F4266;
+    fill: transparent;
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+
+    transition: background-color var(--transition-dur-and-fun);
 }
 
 .contacts-form-checkbox-label{
