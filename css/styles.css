@@ -463,6 +463,9 @@ color: var(--button-background-color);
 max-width: 264px;
 }
 
+.footer-social{
+    margin-right: 80px;
+}
 .footer-social-text{
 text-align: left;
 color: var(--white-background-color);
@@ -499,6 +502,64 @@ color: var(--white-background-color);
 .footer-social-list-link:focus{
     background-color: var(--secondary-accent-color);
 }
+
+.footer-subscribe-text{
+    text-align: left;
+color: var(--white-background-color);
+
+    margin-bottom: 16px;
+}
+
+.footer-subscribe-form{
+display:flex;
+}
+.subscribe-input{
+    display: flex;
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: var(--hero-background-color);
+    padding: 8px 16px;
+    margin-right: 24px;
+}
+
+
+
+.subscribe-input::placeholder{
+font-size: 12px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.04em;
+text-align: left;
+color: #FFFFFF;
+}
+
+.footer-subscribe-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    text-align: center;
+
+    width: 165px;
+    height: 40px;
+    padding: 8px 24px;
+    gap: 16px;
+    border: none;
+    border-radius: 4px;
+
+    color: var(--white-background-color);
+    background-color: var(--primary-brand-color);
+
+    transition: background-color var(--transition-dur-and-fun);
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus{
+    background-color: var(--press-state-color);
+}
+
 /* ==============/Footer=============== */
 
 /* ===============Backdrop==================== */
