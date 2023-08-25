@@ -739,6 +739,7 @@ color: #2E2F4266;
 background-color: var(--press-state-color);
 border: none;
 fill: var(--light-color);
+border-color: var(--press-state-color);
 }
 
 /* .contacts-form-checkbox:focus
